@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+.products-page {
+  display: flex;
+  flex-direction: column;
+  gap: 120px 0;
+  background-color: #eeeeee73;
+}
+.mg-buttom {
+  margin-bottom: 80px;
+}

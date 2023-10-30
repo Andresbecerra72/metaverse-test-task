@@ -1,0 +1,21 @@
+<section class="container">
+    <h3>Top Perks for you</h3>
+    <div class="perks-carousel-container">
+        <div class="perks-carousel-container__cards">
+            <app-slider [images]="perks$ | async" [swiperConfig]="swiperConfig">
+            <ng-template #customize let-img>
+                <app-card-product class="review-card" [isPerk]="true" [perk]="getItem(img)"></app-card-product>
+            </ng-template>
+            </app-slider>
+        </div>
+    </div>
+    <div class="top-perk" role="article">
+      <div class="top-perk__info">
+          <h3>Lorem ipsum dolor sit amet consectetur</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <button type="button" class="btn btn-success">ipsum dolos</button>
+      </div>
+      <img class="avatar" src="/assets/images/products/dames-grape.png" alt="Product top perks" aria-label="Product Image: Lorem ipsum dolor sit amet consectetur">
+  </div>
+</section>
+

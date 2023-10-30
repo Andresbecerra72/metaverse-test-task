@@ -1,0 +1,47 @@
+:host section > app-card-product {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.shop-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.title-shop-products{
+  margin-top: 46px;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 74px;
+  margin-top: -30px;
+}
+
+
+@media (max-width:1199px) and (min-width:992px) {
+
+
+}
+
+@media (max-width:991px) and (min-width:768px) {
+:host section > .shop-products {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+}
+
+@media (max-width:767px) and (min-width:576px) {
+
+
+}
+
+@media screen and (max-width:575px) {
+  :host section > .shop-products {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}

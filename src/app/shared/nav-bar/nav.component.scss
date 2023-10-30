@@ -1,0 +1,107 @@
+@import '../../../styles.scss';
+
+.navbar {
+  padding: 2%;
+  background-color: $color-gray-light !important;
+}
+.collapse.navbar-collapse{
+  gap: 2rem;
+}
+
+.nav-item{
+  color: black;
+  font-size: 1.5rem;
+  font-family: Poppins;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  margin-left: 20px;
+}
+
+
+.ms-n5 {
+  margin-left: -40px;
+}
+
+
+.margin-custom {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+
+}
+
+.search-sing-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .input-group-append {
+    position: relative;
+    left: -30px;
+    float: right;
+  }
+  .form-control {
+    border-radius: 1rem;
+    height: 3rem;
+    padding-left: 1.2rem;
+  }
+}
+
+input::placeholder {
+  color: $color-gray-light;
+  opacity: 1;
+}
+
+input::-ms-input-placeholder {
+  color: $color-gray-light;
+}
+
+.sing-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+
+}
+img {
+  cursor: pointer;
+}
+
+@media (max-width:991px) and (min-width:768px) {
+  nav.navbar > .container {
+    justify-content: space-around;
+}
+}
+
+
+@media (max-width:767px) and (min-width:576px) {
+  nav.navbar > .container {
+    justify-content: space-around;
+}
+}
+
+
+@media screen and (max-width:575px) {
+
+  nav.navbar > .container {
+    justify-content: space-evenly;
+  }
+  .search-sing-menu {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
